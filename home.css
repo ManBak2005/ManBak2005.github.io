@@ -1,0 +1,188 @@
+@font-face {
+  font-family: TitleFont;
+  src:url(aBlackLives.otf)
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  color: #DAD7DC;
+  background-color: #DAD7DC;
+  margin: 0;
+
+}
+
+.Active {
+  background-color: #293d33;
+}
+
+ul {
+  border-style: solid;
+  border-width: 0.1em;
+  width: 100%;
+  position: fixed;
+  list-style: none;
+  background-color: #3A5A40;
+  z-index: 999;
+
+}
+
+ul li {
+  border-right-style: solid;
+  border-width: 0.1em;
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  display: block;
+  padding: 25px 50px;
+  color:rgb(255, 255, 255);
+  text-decoration:none;
+  text-align: center;
+  font-size: 20px;
+}
+
+ul li a[href=""] {
+  pointer-events: none;
+  cursor: default;
+}
+
+ul li ul.Politiek li {
+  display: block;
+}
+
+ul li ul.Politiek {
+  width: 200px;
+  border-style: solid;
+  border-width: 1px;
+  background-color:#3A5A40;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover {
+  background-color:#3A5A40;
+  color: white;
+  outline-style: solid;
+  outline-color: rgb(170, 170, 170);
+
+}
+
+ul li:hover ul.Politiek {
+  display: block;
+}
+
+
+ul li ul li {
+  border-right-style: solid;
+  border-width: 1px;
+  display: inline-block;
+  position: relative;
+
+}
+
+ul li a ul li a  {
+  display: block;
+  padding: 25px 50px;
+  color:rgb(255, 255, 255);
+  text-decoration:none;
+  text-align: center;
+  font-size: 20px;
+}
+
+ul li ul.Populatie li {
+  display: block;
+}
+
+ul li ul.Populatie {
+  width: 9.5em;
+  border-style: solid;
+  border-width: 0.1em;
+  background-color:#3A5A40;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li:hover ul.Populatie {
+  display: block;
+}
+
+ul li ul.Reizen li {
+  display: block;
+}
+
+ul li ul.Reizen {
+  width: 280px;
+  border-style: solid;
+  border-width: 0.1em;
+  background-color:#3A5A40;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li:hover ul.Reizen {
+  display: block;
+}
+
+Footer {
+  margin-left: 20px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-align:left;
+}
+
+/* https://www.youtube.com/watch?v=mxHoPYFsTuk Ik heb deze video gebruikt voor het maken */
+
+.Titel {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  font-size: 100px;
+  text-shadow: 0 0 20px black;
+  font-family: TitleFont;
+}
+
+section {
+  font-size: 40px;
+  padding: 50px;
+  background-color: black;
+  color: white;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.vlag {
+  position: absolute;
+  height: 80%;
+  width: 55%;
+  object-fit: cover;
+  z-index: -2;
+  transform: translateZ(-10px) scale(2);
+}

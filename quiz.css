@@ -1,0 +1,99 @@
+@font-face {
+    font-family: TitleFont;
+    src:url(aBlackLives.otf)
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+ }
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    color: #DAD7DC;
+    background-color: #DAD7DC;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image: linear-gradient(315deg, #DAD7DC 0%, #3A5A40 80%);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}  
+
+  Footer {
+  margin-left: 20px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-align:left;
+  margin: 100px;
+  }
+
+  .quiz-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px #588157;
+    width: 1000px;
+    overflow: hidden;
+
+  }
+
+.quiz-header {
+    padding: 32px;
+}
+
+  h2 {
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+    color: black;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: black;
+  }
+
+  ul li label {
+    cursor: pointer;
+  }
+
+  button {
+    background-color: #344E41;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 18px;
+  }
+
+  button:hover {
+    background-color: #111b16;
+  }
+
+  #question {
+    border-style: hidden hidden solid hidden;
+    color: black;
+  }
+  
+  .Hm {
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin: 50px;
+  }
